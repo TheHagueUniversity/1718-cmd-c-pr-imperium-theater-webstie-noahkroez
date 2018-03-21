@@ -1,8 +1,4 @@
-body {
-    margin: 0;
-}
-
-#homeheader {
+header {
     background: #003956;
     height: 240px;
     border-bottom: 15px #921942 solid;
@@ -29,7 +25,7 @@ a {
     color: #d3d3d3;
     font-size: 20pt;
     text-align: center;
-    margin: 15px 35px;
+    margin: 10px 35px;
 }
 
 nav a:link {
@@ -46,26 +42,5 @@ nav a:hover {
     height: 167px;
     margin: auto;
     display: block;
-    padding: 10px;
-}
-
-nav.header2 {
-    font-family: Big Caslon;
-    color: #d3d3d3;
-    font-size: 20pt;
-    text-align: center;
-    margin: -50px 40px;
-
-}
-
-header.header2 {
-    background: #003956;
-    height: 189px;
-}
-
-img.header2 {
-    width: 167px;
-    height: 167px;
-    margin: auto;
     padding: 10px;
 }
