@@ -2,44 +2,91 @@ body {
     margin: 0;
 }
 
+.home nav ul {
+    list-style: none;
+    margin: 0 60px;
+    padding: 0px;
+}
+
+.home nav ul li {
+    float: left;
+}
+
+.home nav ul li a {
+    color: #d3d3d3;
+    font-size: 24pt;
+    display: block;
+    padding: 8px 30px;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
 #homeheader {
     background: #003956;
     height: 240px;
     border-bottom: 15px #921942 solid;
 }
 
-#Tickets {
+/*Tekstbox op home pagina*/
+
+section {
+    width: 300px;
+    height: 235px;
+    background-color: white;
+    border: 7px #921942 solid;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    left: 150px;
+    top: 150px
+}
+
+section h1 {
+    margin: 0px;
+    color: #921942;
+}
+
+/*achtergrond img op de home page*/
+
+#achtergrond {
+    width: 100%;
+    position: absolute;
+}
+
+/*Tickets button op home pagina*/
+
+#TicketsHome {
     text-decoration: none;
     padding: 20px;
     background-color: white;
     color: #003956;
     border: 5px #921942 solid;
     float: right;
-    margin: -150px 80px
+    margin: -150px 49px;
 }
 
-#Tickets:hover {
+/*Tickets button op home pagina*/
+
+#TicketsHome:hover {
     color: white;
     background-color: #921942;
 }
 
-nav,
-a {
-    font-family: Big Caslon;
-    color: #d3d3d3;
-    font-size: 20pt;
-    text-align: center;
-    margin: 15px 35px;
-}
+/*Tickets button in de navigatie*/
 
-nav a:link {
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
+#TicketsNav2:hover {
     color: white;
+    background-color: #921942;
 }
+
+/*Logo op home page*/
 
 #logo {
     width: 167px;
@@ -49,23 +96,67 @@ nav a:hover {
     padding: 10px;
 }
 
-nav.header2 {
-    font-family: Big Caslon;
-    color: #d3d3d3;
-    font-size: 20pt;
-    text-align: center;
-    margin: -50px 40px;
-
+.Navheader2 nav ul {
+    list-style: none;
+    margin: 0px 100px;
+    padding: 0px;
 }
 
-header.header2 {
+.Navheader2 nav ul li {
+    float: left;
+}
+
+.Navheader2 nav ul li a {
+    color: #d3d3d3;
+    font-size: 24pt;
+    display: block;
+    padding: 0px 58px;
+    position: relative;
+    top: 140px;
+}
+
+.Navheader2 nav ul li a:link {
+    text-decoration: none;
+}
+
+.Navheader2 nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+#TicketsNav2 {
+    text-decoration: none;
+    font-size: 24pt;
+    padding: 20px;
+    background-color: white;
+    color: #003956;
+    border: 5px #921942 solid;
+    margin: 20px 49px;
+    position: absolute;
+    left: 1000px
+}
+
+/*Header van overige pagina's (geen home page)*/
+
+.header2 {
     background: #003956;
     height: 189px;
 }
 
-img.header2 {
+/*Dit is het logo op de overige pagina's (geen home page)*/
+
+.logo2 {
     width: 167px;
     height: 167px;
     margin: auto;
     padding: 10px;
+    position: absolute
+}
+
+/*Zoek en datum prik functie op tickets pagina*/
+
+.TicketsZoekbar {
+    padding: 30px;
+    background-color: #921942;
+    color: #d3d3d3;
 }

@@ -7,21 +7,32 @@
     <link href="Project3.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="Navheader2">
     <header class="header2">
-        <img class="header2" src="logotheater.png" alt="Logo" title="Logo" />
+        <img class="logo2" src="logotheater.png" alt="Logo" title="Logo" />
 
         <!--Deze a is de grote button rechtsboven. Heb geen button gebruikt-->
-        <a id="Tickets" href="tickets.html">TICKETS</a>
+        <a id="TicketsNav2" href="tickets.html">TICKETS</a>
 
-        <nav class="header2">
-            <a class="header2" href="Home.html">Home</a>
-            <a class="header2" href="Agenda.html">Agenda</a>
-            <a class="header2" href="Archief.html">Archief</a>
-            <a class="header2" href="Contact.html">Contact</a>
-            <a class="header2" href="Over ons.html">Over ons</a>
+        <nav>
+            <ul>
+                <li><a href='home.html'>Home</a></li>
+                <li><a href='agenda.html'>Agenda</a></li>
+                <li><a href='archief.html'>Archief</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+                <li><a href='over-ons.html'>Over ons</a></li>
+            </ul>
         </nav>
     </header>
+    <div class="TicketsZoekbar">
+        <form>
+            <label for="zoeken">Zoeken:</label>
+            <input type="search" id="zoeken">
+            <br>
+            <label for="datum">Datum:</label>
+            <input type="date" id="datum">
+        </form>
+    </div>
 
 </body>
 
