@@ -2,6 +2,8 @@ body {
     margin: 0;
 }
 
+/*Start home pagina*/
+
 .home nav ul {
     list-style: none;
     margin: 0 60px;
@@ -65,11 +67,12 @@ section h1 {
 #TicketsHome {
     text-decoration: none;
     padding: 20px;
+    font-size: 24pt;
     background-color: white;
     color: #003956;
     border: 5px #921942 solid;
     float: right;
-    margin: -150px 49px;
+    margin: -150px 100px;
 }
 
 /*Tickets button op home pagina*/
@@ -96,6 +99,10 @@ section h1 {
     padding: 10px;
 }
 
+/*Eind home pagina*/
+
+/*.Nav2 elementen zijn gemaakt voor de navigatie die op de overige pagina's staat*/
+
 .Navheader2 nav ul {
     list-style: none;
     margin: 0px 100px;
@@ -110,7 +117,8 @@ section h1 {
     color: #d3d3d3;
     font-size: 24pt;
     display: block;
-    padding: 0px 58px;
+    margin: 0px 110px;
+    margin-right: auto;
     position: relative;
     top: 140px;
 }
@@ -124,6 +132,11 @@ section h1 {
     color: #ffffff;
 }
 
+.Navheader2 nav ul li a:active {
+    color: white;
+
+}
+
 #TicketsNav2 {
     text-decoration: none;
     font-size: 24pt;
@@ -131,7 +144,7 @@ section h1 {
     background-color: white;
     color: #003956;
     border: 5px #921942 solid;
-    margin: 20px 49px;
+    margin: 20px -40px;
     position: absolute;
     left: 1000px
 }
@@ -153,10 +166,34 @@ section h1 {
     position: absolute
 }
 
-/*Zoek en datum prik functie op tickets pagina*/
+/*Start tickets pagina*/
 
 .TicketsZoekbar {
     padding: 30px;
     background-color: #921942;
     color: #d3d3d3;
 }
+
+.ticketsbody {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: auto;
+    border: 0px
+}
+
+.Dezeweek {
+    text-align: center;
+    font-size: 36pt;
+    font-family: Big Caslon;
+
+}
+
+
+
+
+
+
+
+
+/*Einde tickets pagina*/
