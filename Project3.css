@@ -132,10 +132,6 @@ section h1 {
     color: #ffffff;
 }
 
-.Navheader2 nav ul li a:active {
-    color: white;
-
-}
 
 #TicketsNav2 {
     text-decoration: none;
@@ -197,3 +193,7 @@ section h1 {
 
 
 /*Einde tickets pagina*/
+
+/*start agenda pagina*/
+
+/*einde agenda pagina*/
