@@ -197,3 +197,18 @@ section h1 {
 /*start agenda pagina*/
 
 /*einde agenda pagina*/
+
+/*start archief*/
+
+/*Einde archief*/
+
+/*Start contact pagina*/
+
+.iframe {
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin: 0px;
+}
+
+/*Einde contact pagina*/
