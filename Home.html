@@ -1,3 +1,8 @@
+<!-- REVIEW
+noem je homepagina altijd index.html
+
+zet even netjes je css en je afbeeldingen in mapjes
+-->
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -10,6 +15,9 @@
 <body class="home">
     <header id="homeheader">
         <img id="logo" src="logotheater.png" alt="Logo" title="Logo">
+        <!-- REVIEW
+        maak het logo clickable: escape hatch
+        -->
 
         <!--Deze A(link) is de grote button rechtsboven. Heb geen button gebruikt-->
         <a id=TicketsHome href="tickets.html">TICKETS</a>
@@ -17,6 +25,9 @@
         <nav>
             <ul>
                 <li><a href='home.html'>Home</a></li>
+                <!-- REVIEW
+                zorg dat het actieve menu item zichtbaar is, dit kun je bijv. met een class="active" doen
+                -->
                 <!--Toneelgroep is niet uitgewerkt-->
                 <li><a href='toneelgroep.html'>Toneelgroep</a></li>
                 <li><a href='agenda.html'>Agenda</a></li>
@@ -31,12 +42,17 @@
 
     </header>
     <img id="achtergrond" src="Achtergrond_home.png" alt="achtergrond" title="achtergrond">
-
+    <!-- REVIEW
+    Achtergrond afbeeldingen horen in CSS te worden geplaatst
+    -->
     <section>
         <h1>Ons theater</h1>
         <p>
             In het Imperium theater hangt er een hele gezellige, leuke en vriendelijke sfeer. In het theater kunt u rustig gaan zitten in een van onze 80 stoelen in een ruime zaal. Kom gezellig langs met vrienden of familie. Of misschien zelfs kijken náár vrienden of familie!
             <a id="klikhier" href='agenda.html'>klik hier </a> voor een kijkje in onze agenda.
+            <!-- REVIEW
+            waarom een specifiek id, als alle links deze styling moeten krijgen, moet je een class gebruiken
+            -->
         </p>
     </section>
 </body>
