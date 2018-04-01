@@ -16,40 +16,39 @@
 
         <nav>
             <ul>
-                <li><a href='home.html'>Home</a></li>
-                <li><a href='agenda.html'>Agenda</a></li>
-                <li><a href='archief.html'>Archief</a></li>
-                <li><a href='over-ons.html'>Over ons</a></li>
-                <li><a href='contact.html'>Contact</a></li>
+                <li><a class="active" href='home.html'>Home</a></li>
+                <li><a class="active" href='agenda.html'>Agenda</a></li>
+                <li><a class="active" href='archief.html'>Archief</a></li>
+                <li><a class="active" href='over-ons.html'>Over ons</a></li>
+                <li><a class="active" href='contact.html'>Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="contact">
         <h1>Contact &#38; route</h1>
-        <label>Telefoon: 071 5141035</label>
-        <label>Adres: Oude Vest 33e
-               2312 XR Leiden</label>
-       <!-- REVIEW
-       adresgegevens moet je niet met labels doen, dit is gewoon tekst, dus een span of p
-       -->
+        <p>Telefoon: 071 5141035 Adres: Oude Vest 33e 2312 XR Leiden</p>
 
         <h1>Stel uw vraag!</h1>
         <form>
-          <!-- REVIEW
+            <!-- REVIEW
           form heeft verplichte attributen
           -->
             <label for="Voornaam">Voornaam:</label>
-            <input type="text" id="Voornaam">
+            <input type="text" id="Voornaam" placeholder="Voornaam">
+            <label for="Tussenvoegsel">Tussenvoegsel:</label>
+            <input type="text" id="Tussenvoegsel" placeholder="Tussenvoegsel">
+            <label for="Achternaam">Achternaam:</label>
+            <input type="text" id="Achternaam" placeholder="Achternaam">
             <!-- REVIEW
             placeholder? verplicht?
             -->
             <label for="E-mail">E-mail:</label>
-            <input type="email" id="E-mail">
+            <input type="email" id="E-mail" placeholder="naam@hotmail.com">
             <label for="Onderwerp">Onderwerp:</label>
-            <input type="text" id="Onderwerp">
+            <input type="text" id="Onderwerp" placeholder="Uw onderwerp">
             <label for="Bericht">Bericht:</label>
-            <input type="text" id="Bericht">
+            <input type="text" id="Bericht" placeholder="Typ hier uw bericht...">
             <input type="button" value="Versturen">
         </form>
     </section>
