@@ -2,15 +2,28 @@ body {
     margin: 0;
 }
 
-.active:active {
+.active {
     color: white;
+}
+
+.Terugbutton {
+    font-family: Hirino Sans GB;
+    border: 1px solid #003956;
+    color: #003956;
+    border-radius: 5px;
+    text-decoration-line: none;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    padding: 10px;
+
 }
 
 /*Start home pagina*/
 
 .home nav ul {
     list-style: none;
-    margin: 0 60px;
+    margin: 0 75px;
     padding: 0px;
 }
 
@@ -22,7 +35,7 @@ body {
     color: #d3d3d3;
     font-size: 24pt;
     display: block;
-    padding: 8px 30px;
+    padding: 8px 40px;
 }
 
 nav ul li a:link {
@@ -51,8 +64,10 @@ section {
     text-align: left;
     position: relative;
     left: 150px;
-    top: 150px
+    top: 150px;
 }
+
+
 
 section h1 {
     margin: 0px;
@@ -105,7 +120,7 @@ section h1 {
 
 /*Eind home pagina*/
 
-/*.Nav2 elementen zijn gemaakt voor de navigatie die op de overige pagina's staat*/
+/*.Nav2 elementen zijn gemaakt voor de navigatie die op de overige pagina's staat (alle pagina's behalve de home pagina)*/
 
 .Navheader2 nav ul {
     list-style: none;
@@ -163,7 +178,7 @@ section h1 {
     height: 167px;
     margin: auto;
     padding: 10px;
-    position: absolute
+    position: absolute;
 }
 
 /*Start tickets pagina*/
@@ -189,22 +204,47 @@ section h1 {
 
 }
 
-
-
-
-
-
-
-
 /*Einde tickets pagina*/
 
-/*start agenda pagina*/
+/*start detaillpaginatickets pagina*/
 
-/*einde agenda pagina*/
+/*einde detaillpaginatickets pagina*/
 
-/*start archief*/
+/*start bestelproces pagina*/
 
-/*Einde archief*/
+header {
+    background-color: #003956;
+    margin: 0px;
+    padding: 15px;
+    border-bottom: 20px solid #921942;
+
+}
+
+.h1reserveren {
+    font-family: Big caslon;
+    color: #d3d3d3;
+    text-align: center;
+    font-size: 40pt;
+    font-weight: 1;
+}
+
+.reserveerformulier {
+    border: 3px solid #921942;
+    width: 10%;
+    position: relative;
+    left: 600px;
+}
+
+
+/*Einde bestelproces pagina*/
+
+/*begin zekerweten pagina*/
+
+.zekerweten {
+    position: absolute;
+}
+
+/*Einde zekerweten pagina*/
 
 /*Start contact pagina*/
 
