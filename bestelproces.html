@@ -11,19 +11,24 @@
     <header>
         <h1 class="h1reserveren">Tickets reserveren voor Killer joe</h1>
     </header>
-    <a href="tickets.html" class="Terugbutton" id="button">Terug naar overzicht</a>
+    <img src="backknop.png" class="terugicoontje" alt="terug icoontje" title="terug icoontje" /><a href="tickets.html" class="Terugbutton">Terug naar tickets overzicht</a>
     <section class="reserveerformulier">
-        <form method="get" action="">
-            <label for="voornaam">Naam:</label>
-            <input type="text" id="voornaam" placeholder="Uw voornaam">
-            <label for="achternaam">Achternaam:</label>
+        <form method="get" action="http://127.0.0.1:61389/bestelproces.html">
+            <label for="voornaam">Naam:
+                <input type="text" id="voornaam" placeholder="Uw voornaam"></label>
+
+            <label for="achternaam">Achternaam:
             <input type="text" id="achternaam" placeholder="Uw achternaam">
-            <label>E-mail:</label>
-            <input type="email" id="e-mail" placeholder="naam@hotmail.com">
-            <label for="telefoonnummer">Telefoonnummer:</label>
-            <input type="tel" id="telefeoonnummer" placeholder="06-12345678">
-            <label for="tickets">Aantal tickets:</label>
-            <select value="aantal" id="tickets">
+            </label>
+
+            <label>E-mail:
+                <input type="email" id="e-mail" placeholder="naam@hotmail.com"></label>
+
+            <label for="telefoonnummer">Telefoonnummer:
+                <input type="tel" id="telefoonnummer" placeholder="06-12345678"></label>
+
+            <label class="select" for="tickets">Aantal tickets:
+            <select id="tickets">
                 <option value="1">1</option>
                 <option value="1">2</option>
                 <option value="1">3</option>
@@ -34,10 +39,10 @@
                 <option value="1">8</option>
                 <option value="1">9</option>
                 <option value="1">10</option>
-            </select>
+                </select></label>
         </form>
-        <a href="zekerweten.html" class="button">Reserveren</a>
-        <a href="bestelproces.html" class="button">Herstel</a>
+        <a class="reserveren" href="zekerweten.html">Reserveren</a>
+        <a href="bestelproces.html" class="reserveren">Herstel</a>
     </section>
 
 </body>

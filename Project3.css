@@ -2,8 +2,25 @@ body {
     margin: 0;
 }
 
-.active {
+#active {
     color: white;
+}
+
+/*Deze class heb ik gegeven aan elk A element in de navigatie, dit moetst omdat anders te active niet werkten.*/
+
+.grijs {
+    color: #d3d3d3
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: grey;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+p {
+    font-family: hiragino-sans;
 }
 
 .Terugbutton {
@@ -65,6 +82,11 @@ nav ul li a:hover {
     position: relative;
     left: 150px;
     top: 150px;
+}
+
+.homeinleiding {
+    font-family: hiragino sans;
+    font-size: 11pt;
 }
 
 
@@ -133,7 +155,6 @@ section h1 {
 }
 
 .Navheader2 nav ul li a {
-    color: #d3d3d3;
     font-size: 24pt;
     display: block;
     margin: 0px 110px;
@@ -181,6 +202,7 @@ section h1 {
     position: absolute;
 }
 
+
 /*Start tickets pagina*/
 
 .TicketsZoekbar {
@@ -193,11 +215,11 @@ section h1 {
 }
 
 .ticketsbody {
-    float: left;
-    left: 0px;
-    top: 0px;
-    width: auto;
-    border: 0px
+    height: 500px;
+}
+
+.ticketslijst {
+    list-style-type: none;
 }
 
 .Dezeweek {
@@ -205,14 +227,116 @@ section h1 {
     font-size: 36pt;
     font-family: Big Caslon;
     margin: 0px;
+    margin-top: 40px;
     color: #921942
 }
 
+.ticketsfoto {
+    width: 90%
+}
 
+.ticketsfoto:hover {
+    box-shadow: 5px 5px 5px grey;
+}
+
+.figuretickets {
+    display: inline-block;
+    width: 20%;
+    margin: 30px
+}
+
+.figuretickets a figcaption {
+    text-align: left;
+    font-family: big caslon;
+    color: #035575;
+}
+
+.figuretickets a figcaption:hover {
+    font-weight: bolder;
+}
 
 /*Einde tickets pagina*/
 
 /*start detaillpaginatickets pagina*/
+
+/*aparte class voor gemaakt omdat deze niet op dezelfde plek kwam als de button op de detail pagina van het archief*/
+
+.terugknop1 {
+    position: relative;
+    bottom: 424px;
+    left: 130px;
+}
+
+.ticketsdetaillfoto {
+    position: relative;
+    top: 120px;
+    left: -67px;
+}
+
+/*Informatie over de voorstelling*/
+
+.detaillpaginatickets {
+    position: relative;
+    bottom: 390px;
+    left: 550px;
+    width: 500px;
+    font-family: big caslon;
+}
+
+.detaillpaginatickets h1 {
+    font-size: 24pt;
+
+}
+
+.detaillpaginatickets p {
+    font-family: hiragino sans;
+    font-size: 11pt;
+}
+
+/* tijden en tickets kopje*/
+
+.tijdentickets {
+    position: relative;
+    left: 120px;
+    margin-top: -160px;
+    color: #921942;
+    font-family: big caslon;
+}
+
+/*Een height gegeven omdat het anders niet netjes op de pagina kwam*/
+
+.ticketslijst {
+    list-style-type: none;
+    height: 360px;
+}
+
+.dagenentijden {
+    position: relative;
+    left: 120px;
+    margin-bottom: 20px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 900px;
+    font-size: 13pt
+}
+
+.tijdenbutton {
+    float: right;
+    padding: 4px;
+    margin-right: 5px;
+    border: 1px solid #035575;
+    border-radius: 5px;
+    font-family: hiragino sans;
+    color: #035575;
+    text-decoration: none;
+}
+
+.tijdenbutton:hover {
+    background-color: #003956;
+    color: white;
+
+}
 
 /*einde detaillpaginatickets pagina*/
 
@@ -235,31 +359,419 @@ header {
 }
 
 .reserveerformulier {
-    border: 3px solid #921942;
-    width: 10%;
+    width: 25%;
     position: relative;
-    left: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding: 10px;
 }
 
+.reserveerformulier label {
+    text-align: right;
+    display: block;
+    padding-bottom: 10px;
+    font-family: hiragino sans
+}
+
+.reserveerformulier input {
+    text-align: left;
+    font-style: italic;
+    opacity: 0.5;
+    width: 150px;
+    border-radius: 5px
+}
+
+.select {
+    position: relative;
+    right: 112px;
+}
+
+.reserveren {
+    padding: 4px;
+    margin-right: 5px;
+    top: 20px;
+    left: 120px;
+    border: 1px solid #035575;
+    border-radius: 5px;
+    font-family: hiragino sans;
+    color: #035575;
+    text-decoration: none;
+    position: relative;
+    left:
+}
+
+.reserveren:hover {
+    color: white;
+    background-color: #035575
+}
+
+.Terugbutton:hover {
+    color: white;
+    background-color: #035575;
+}
+
+.terugicoontje {
+    position: relative;
+    left: 95px;
+    top: 55px;
+}
 
 /*Einde bestelproces pagina*/
 
 /*begin zekerweten pagina*/
 
-.zekerweten {
-    position: absolute;
+.ja {
+    color: #003956;
+    border: 1px solid #003956;
+    border-radius: 6px;
+    padding: 5px;
+    color: #003956;
+    text-decoration: none;
+    font-family: hiragino sans;
+    font-size: 11pt;
 }
+
+.ja:hover {
+    color: white;
+    background-color: #003956;
+}
+
 
 /*Einde zekerweten pagina*/
 
-/*Start contact pagina*/
+/*Begin bevesteging pagina*/
 
-.iframe {
+.bodybevesteging {
+    height: 800px;
+}
+
+.bevestegingpagina {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #921942;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.bevestegingpagina p {
+    font-family: hiragino sans;
+    font-size: 11pt;
+}
+
+.bevestegingh2 {
+    text-align: center;
+    font-family: big caslon;
+    color: #921942;
+}
+
+.inleidingbevesteging {
+    text-align: left;
+}
+
+.kwartiervantevoren {
+    font-style: italic;
+    font-family: hiragino sans;
+    margin-top: 5px;
+    font-size: 10pt;
+    color: grey;
+    text-align: center;
+}
+
+.terugnaarhome {
+    border: 2px solid #035575;
+    border-radius: 5px;
+    color: #035575;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+    left: 400px;
+    top: 70px;
+    font-family: hiragino sans;
+    font-size: 14pt;
+}
+
+.terugnaarhome:hover {
+    color: white;
+    background-color: #035575;
+}
+
+
+/*Eind bevesteging pagina*/
+
+/*begin archief pagina*/
+
+.archiefh1 {
+    color: #921942;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.archieffoto {
+    width: 90%
+}
+
+.archieffoto:hover {
+    box-shadow: 5px 5px 5px grey;
+}
+
+.figurearchief {
+    display: inline-block;
+    width: 20%;
+    margin: 30px
+}
+
+.figurearchief a figcaption {
+    text-align: left;
+    font-family: big caslon;
+    color: #035575;
+}
+
+.figurearchief a figcaption:hover {
+    font-weight: bolder;
+}
+
+/*einde archief pagina*/
+
+/*Begin archiefdetail pagina*/
+
+.terugbuttondetailpagina {
+    position: relative;
+    bottom: 430px;
+    left: 140px;
+    border: 1px solid #003956;
+    border-radius: 6px;
+    padding: 14px;
+    color: #003956;
+    text-decoration: none;
+    font-family: hiragino sans
+}
+
+.terugbuttondetailpagina:hover {
+    background-color: #003956;
+    color: white;
+}
+
+.terugknop {
+    position: relative;
+    bottom: 426px;
+    left: 130px
+}
+
+.archiefdetailpagina {
+    position: relative;
+    bottom: 400px;
+    left: 550px;
     width: 500px;
-    height: 500px;
-    float: right;
-    margin: 0px;
+}
+
+.archiefdetailpagina p {
+    font-family: hiragino sans;
+    font-size: 11pt;
+}
+
+.archiefdetailpagina h1 {
+    font-family: big caslon;
+    font-size: 24pt;
+}
+
+.archiefdetailpaginafoto {
+    position: relative;
+    top: 107px;
+    left: -62px;
+}
+
+.regieEtc {
+    position: relative;
+    left: 162px;
+    bottom: 300px;
+}
+
+.regieEtc p {
+    font-family: hiragino sans;
+    font-size: 11pt;
+}
+
+/*Ik heb dit een width gegeven omdat ik zo de de zin goed kon afsnijden*/
+
+.witregel {
+    width: 450px;
+}
+
+span {
+    display: block;
+}
+
+/*Einde archiefdetai pagina*/
+
+/*Begin over ons pagina*/
+
+.overOns h1 {
+    color: #921942;
+    font-family: big caslon;
+    font-size: 24pt;
+}
+
+.overOns {
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+.overOns p {
+    width: 550px;
+    font-size: 12pt;
+    font-family: hiragino sans;
+    font-size: 11pt;
 
 }
 
+.overOns h2 {
+    font-family: big caslon;
+}
+
+.overonsfoto {
+    width: 400px;
+    position: relative;
+    bottom: 550px;
+    left: 700px;
+
+}
+
+/*Einde over ons pagina*/
+
+/*Start contact pagina*/
+
+.contact {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    font-family: hiragino sans;
+    width: 500px
+}
+
+.contact h1 {
+    font-family: big caslon;
+    width: 170px
+}
+
+.paddingbottom {
+    padding-bottom: 30px;
+}
+
+.vraagstellen {
+    position: relative;
+    margin: 5px;
+    width: 150px;
+    width: 300px;
+}
+
+#Bericht {
+    height: 100px;
+    width: 150px;
+    border-radius: 5px;
+    overflow: scroll;
+
+}
+
+.verstuurbutton {
+    font-family: Hirino Sans GB;
+    padding: 5px;
+    border: 1px solid #003956;
+    color: #003956;
+    border-radius: 5px;
+    text-decoration-line: none;
+    position: relative;
+    top: 5px;
+    left: 130px;
+}
+
+.verstuurbutton:hover {
+    background-color: #003956;
+    color: white;
+}
+
+.iframe iframe {
+    position: relative;
+    left: 500px;
+    bottom: 450px;
+    height: 500px;
+    width: 650px;
+}
+
+.contact label {
+    text-align: right;
+    display: block;
+    padding-bottom: 10px;
+    font-family: hiragino sans;
+    position: relative;
+    right: 13px;
+}
+
+.contact input {
+    text-align: left;
+    width: 150px;
+    border-radius: 5px
+}
+
+
 /*Einde contact pagina*/
+
+/*start vraag verzonden pagina*/
+
+.overlay {
+    background-color: black;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: fixed;
+    z-index: 999;
+}
+
+
+section.succesvolverstuurd {
+    background-color: white;
+    z-index: 1000;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 340px;
+    border: 4px solid #921942;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.terugnaarhomebutton {
+    text-decoration: none;
+    color: #003956;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.terugnaarhomebutton:hover {
+    color: white;
+    background-color: #003956;
+}
+
+section.succesvolverstuurd1 {
+    background-color: white;
+    z-index: 1000;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 1040px;
+    border: 4px solid #921942;
+    border-radius: 5px;
+    width: 400px;
+}
+
+/*eind vraag verzonden pagina*/

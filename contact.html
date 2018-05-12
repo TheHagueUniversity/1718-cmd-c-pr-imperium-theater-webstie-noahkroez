@@ -16,45 +16,48 @@
 
         <nav>
             <ul>
-                <li><a href='index.html'>Home</a></li>
+                <li><a class="grijs" href='index.html'>Home</a></li>
 
-                <li><a href='archief.html'>Archief</a></li>
-                <li><a href='over-ons.html'>Over ons</a></li>
-                <li><a class="active" href='contact.html'>Contact</a></li>
+                <li><a class="grijs" href='archief.html'>Archief</a></li>
+                <li><a class="grijs" href='overOns.html'>Over ons</a></li>
+                <li><a class="grijs" id="active" href='contact.html'>Contact</a></li>
             </ul>
         </nav>
     </main>
 
     <section class="contact">
         <h1>Contact &#38; route</h1>
-        <p>Telefoon: 071 5141035 Adres: Oude Vest 33e 2312 XR Leiden</p>
+        <p class="paddingbottom">
+            <span><strong>Telefoon:</strong> 071 5141035</span> <span><strong>   Adres:</strong> Oude Vest 33e 2312 XR Leiden</span>
+        </p>
 
         <h1>Stel uw vraag!</h1>
-        <form>
+        <form method="post" action="http://127.0.0.1:49565/contact.html" class="vraagstellen">
             <!-- REVIEW
           form heeft verplichte attributen
           -->
-            <label for="Voornaam">Voornaam:</label>
-            <input type="text" id="Voornaam" placeholder="Voornaam">
-            <label for="Tussenvoegsel">Tussenvoegsel:</label>
-            <input type="text" id="Tussenvoegsel" placeholder="Tussenvoegsel">
-            <label for="Achternaam">Achternaam:</label>
-            <input type="text" id="Achternaam" placeholder="Achternaam">
-            <!-- REVIEW
-            placeholder? verplicht?
-            -->
-            <label for="E-mail">E-mail:</label>
-            <input type="email" id="E-mail" placeholder="naam@hotmail.com">
-            <label for="Onderwerp">Onderwerp:</label>
-            <input type="text" id="Onderwerp" placeholder="Uw onderwerp">
-            <label for="Bericht">Bericht:</label>
-            <input type="text" id="Bericht" placeholder="Typ hier uw bericht...">
-            <input type="button" value="Versturen">
+            <label for="Voornaam">Voornaam:
+                <input type="text" id="Voornaam" placeholder="Voornaam"></label>
+            <label for="Tussenvoegsel">Tussenvoegsel:
+                <input type="text" id="Tussenvoegsel" placeholder="Tussenvoegsel"></label>
+            <label for="Achternaam">Achternaam:
+                <input type="text" id="Achternaam" placeholder="Achternaam"></label>
+
+            <label for="E-mail">E-mail:
+                <input type="email" id="E-mail" placeholder="naam@hotmail.com"></label>
+
+            <label for="Onderwerp">Onderwerp:
+                <input type="text" id="Onderwerp" placeholder="Uw onderwerp"></label>
+
+            <label for="Bericht">Bericht:
+                <textarea id="Bericht" placeholder="Typ hier uw bericht...">
+                    
+                </textarea></label>
+            <a href="Vraagverstuurd.html" class="verstuurbutton">Versturen</a>
         </form>
     </section>
     <!--Iframe google maps, gegenereert via https://www.mapsdirections.info/nl/maak-een-google-map/-->
     <div class="iframe">
-        <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=nl&q=Oude%20Vest%2033e%202312%20XR%20Leiden+(Imperium%20theater)&ie=UTF8&t=&z=14&iwloc=B&output=embed" scrolling="yes">
-    <a href="https://www.mapsdirections.info/nl/maak-een-google-map/">Maak een Google Map</a> van <a href="https://www.mapsdirections.info/nl/">Nederland Kaart</a>
+        <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=nl&q=Oude%20Vest%2033e%202312%20XR%20Leiden+(Imperium%20theater)&ie=UTF8&t=&z=14&iwloc=B&output=embed">
     </iframe>
     </div>

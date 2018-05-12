@@ -16,64 +16,98 @@
 
         <nav>
             <ul>
-                <li><a href='index.html'>Home</a></li>
-                <li><a class="active" href='archief.html'>Archief</a></li>
-                <li><a href='over-ons.html'>Over ons</a></li>
-                <li><a href='contact.html'>Contact</a></li>
+                <li><a class="grijs" href='index.html'>Home</a></li>
+
+                <li><a class="grijs" id="active" href='archief.html'>Archief</a></li>
+                <li><a class="grijs" href='overOns.html'>Over ons</a></li>
+                <li><a class="grijs" href='contact.html'>Contact</a>
             </ul>
         </nav>
     </main>
-    <!-- REVIEW
-gebruik een lay-out element zoals <main> of <section> voor de content van je pagina's
--->
+
     <!-- REVIEW
   dit is een lijst met foto's, moet je dus ul voor gebruiken
   -->
-    <div class="2015-2016">
-        <h1>2015-2016</h1>
-        <img src="Het%20zouthuis.png" alt="het zouthuis" title="het zouthuis" />
-        <h3>Het zouthuis</h3>
+    <!--De figcaptions bij de figures staan links uitgelijnd onder de foto, dit komt omdat de foto nog een wit stukje er aan heeft aan de rechterzeide waardoor de tekst er niet mooi centraal in het midden onder kan staan-->
+    <div class="tweeduizendvijftien">
+        <h1 class="archiefh1">2015 - 2016</h1>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="Het%20zouthuis.png" alt="het zouthuis" title="het zouthuis" />
+                <figcaption>Het zouthuis</figcaption></a>
+        </figure>
         <!-- REVIEW
         waarom komt er na een h1 een h3?
         -->
-        <img src="De%20dochter%20van%20de%20boevenkoning.png" / alt="De dochter van de boevenkoning" title="De dochter van de boevenkoning">
-        <h3>De dochter van de boevenkoning</h3>
-        <img src="killer%20joe.png" alt="Killer joe" title="Killer joe" />
-        <h3>Killer joe</h3>
-        <img src="Twee.png" title="twee" alt="twee" />
-        <h3>Twee</h3>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="De%20dochter%20van%20de%20boevenkoning.png" alt="De dochter van de boevenkoning" title="De dochter van de boevenkoning" />
+                <figcaption>De dochter van de boevenkoning</figcaption></a>
+
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="killer%20joe.png" alt="Killer joe" title="Killer joe" />
+                <figcaption>Killer joe</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="Twee.png" title="twee" alt="twee" />
+                <figcaption>Twee</figcaption></a>
+        </figure>
     </div>
     <div class="2014-2015">
-        <h1>2014-2015</h1>
-        <img src="archiefFoto's/God%20aan%20de%20slachting.png" />
-        <h3>God van de slachting</h3>
-        <img src="archiefFoto's/Cordoba!.png" />
-        <h3>Córdoba!</h3>
-        <img src="archiefFoto's/Bedrog.png" />
-        <h3>Bedrog</h3>
-        <img src="archiefFoto's/de%20gouden%20draak.png" />
-        <h3>De gouden draak</h3>
+        <h1 class="archiefh1">2014 - 2015</h1>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/God%20aan%20de%20slachting.png" alt="de slachting" title="de slachting" />
+                <figcaption>God van de slachting</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/Cordoba!.png" alt="Cordoba!" title="Cordoba!" />
+                <figcaption>Córdoba!</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/Bedrog.png" alt="bedrog" title="bedrog" />
+                <figcaption>Bedrog</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/de%20gouden%20draak.png" alt="De gouden draak" title="de gouden draak" />
+                <figcaption>De gouden draak</figcaption></a>
+        </figure>
     </div>
     <div class="2013-2014">
-        <h1>2013-2014</h1>
-        <img src="archiefFoto's/Is%20there%20life%20on%20mars?.png" />
-        <h3>Is there life on mars?</h3>
-        <img src="archiefFoto's/Moord%20in%20de%20kersthal.png" />
-        <h3>Moord in de kersthal</h3>
-        <img src="archiefFoto's/Biest.png" />
-        <h3>Biest</h3>
-        <img src="archiefFoto's/Zinsbegoocheling.png" />
-        <h3>Zinsbegoocheling</h3>
+        <h1 class="archiefh1">2013 - 2014</h1>
+        <figure class="figurearchief">
+            <!--Foto verschijnt niet op een of andere manier..-->
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/istherelifeonmars?.png" alt="Is there life on mars?" title="Is there life on mars?" />
+                <figcaption>Is there life on mars?</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/Moord%20in%20de%20kersthal.png" alt="moord in de kersthal" title="Moord in de kersthal" />
+                <figcaption>Moord in de kersthal</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/Biest.png" alt="Biest" title="Biest" />
+                <figcaption>Biest</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/Zinsbegoocheling.png" alt="zinsbegoocheling" title="zinsbegoocheling" />
+                <figcaption>Zinsbegoocheling</figcaption></a>
+        </figure>
     </div>
     <div class="2012-2013">
-        <h1>2012-2013</h1>
-        <img src="archiefFoto's/De%20canadese%20muur.png" />
-        <h3>De canadese muur</h3>
-        <img src="archiefFoto's/Kaatje%20is%20verdronken.png" title="kaatje is verdronken" alt="kaatje is verdronken" />
-        <h3>Kaatje is verdronken</h3>
-        <img src="archiefFoto's/Gewurztraminer.png" alt="Gewurztrimer" title="gewurztraminer" />
-        <h3>Gewürztraminer</h3>
-        <img src="archiefFoto's/Vrede.png" alt="Vrede, voorstelling" title="Vrede, voorstelling" />
-        <h3>Vrede</h3>
+        <h1 class="archiefh1">2012 - 2013</h1>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/De%20canadese%20muur.png" alt="de canadese muur" title="de canadese muur" />
+                <figcaption>De canadese muur</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/Kaatje%20is%20verdronken.png" title="kaatje is verdronken" alt="kaatje is verdronken" />
+                <figcaption>Kaatje is verdronken</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/Gewurztraminer.png" alt="Gewurztrimer" title="gewurztraminer" />
+                <figcaption>Gewürztraminer</figcaption></a>
+        </figure>
+        <figure class="figurearchief">
+            <a href="detaillarchief.html"><img class="archieffoto" src="archiefFoto's/Vrede.png" alt="Vrede, voorstelling" title="Vrede, voorstelling" />
+                <figcaption>Vrede</figcaption></a>
+        </figure>
     </div>
 </body>
